@@ -1,2 +1,45 @@
-Estructuras de Datos - Stack, Queue, Hash Table
-Edsel De Jesus Cisneros Bautista (A00838063) - Equipo 3
+# Estructuras de Datos - Tarea 1
+
+**Edsel de Jesus Cisneros Bautista ** (A00838063)
+
+## Liga de Git
+
+https://github.com/Edsel675/Tarea-1_AplicacionesAvanzadas_A00838063
+
+## Descripcion
+
+Las tres estructuras fueron programadas desde cero en Python sin usar librerias externas para la logica interna. La unica excepcion es `collections.deque` en la Queue, que es parte de la libreria estandar de Python y se uso porque `deque.popleft()` es O(1), mientras que con una lista normal `list.pop(0)` seria O(n).
+
+Use  Claude (IA) como apoyo para generar la estructura base del codigo y los tests. Despues se reviso, se entendio y se ajusto el codigo para que quedara simple y funcional.
+
+## Archivos
+
+- `stack.py` - Pila LIFO
+- `queue_ds.py` - Cola FIFO
+- `hash_table.py` - Tabla hash con separate chaining
+- `demo.py` - Programa de demostracion
+- `tests.py` - 9 pruebas unitarias
+
+## Ejecutar
+
+```bash
+python demo.py
+python -m unittest tests -v
+```
+
+## Test cases
+
+### Stack (3 tests)
+- push/pop: se insertan dos elementos y se verifica que salen en orden inverso (LIFO)
+- peek: se verifica que retorna el tope sin eliminarlo
+- pop en pila vacia: se verifica que lanza IndexError
+
+### Queue (3 tests)
+- enqueue/dequeue: se insertan dos elementos y se verifica que salen en el mismo orden (FIFO)
+- front: se verifica que retorna el frente sin eliminarlo
+- dequeue en cola vacia: se verifica que lanza IndexError
+
+### HashTable (3 tests)
+- put/get: se inserta un par clave-valor y se verifica que get lo retorna
+- remove: se inserta y se elimina, se verifica que ya no existe
+- contains: se verifica que retorna True para claves existentes y False para las que no
