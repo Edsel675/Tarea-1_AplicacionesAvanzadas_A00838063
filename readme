@@ -10,7 +10,7 @@ https://github.com/Edsel675/Tarea-1_AplicacionesAvanzadas_A00838063
 
 Las tres estructuras fueron programadas desde cero en Python sin usar librerias externas para la logica interna. La unica excepcion es `collections.deque` en la Queue, que es parte de la libreria estandar de Python y se uso porque `deque.popleft()` es O(1), mientras que con una lista normal `list.pop(0)` seria O(n).
 
-Use  Claude (IA) como apoyo para generar la estructura base del codigo y los tests. Despues se reviso, se entendio y se ajusto el codigo para que quedara simple y funcional.
+Use  Claude (IA) como apoyo para generar la estructura base del codigo y los tests.
 
 ## Archivos
 
